@@ -36,6 +36,10 @@ jobs:
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
       run: ./gradlew publish
-      env:
-        USERNAME: ${{ github.actor }}
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: SonarQubeScan
+      uses: SonarSource/sonarqube-scan-action@v7
+      env: 
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
+    env:
+      USERNAME: ${{ github.actor }}
+      TOKEN: ${{ secrets.GITHUB_TOKEN }}
