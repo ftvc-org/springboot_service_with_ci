@@ -1,0 +1,9 @@
+openapi: 3.0.1
+info:
+  title: springboot_service_with_ci
+  description: springboot_service_with_ci
+  x-cortex-tag: springboot_service_with_ci
+  x-cortex-type: service
+  x-cortex-git:
+    github:
+      repository: ftvc-org/springboot_service_with_ci
