@@ -15,6 +15,7 @@ plugins {
     id 'eclipse'
     id 'org.springframework.boot' version '3.2.0' // or latest version you need
     id 'io.spring.dependency-management' version '1.1.4'
+    id "org.sonarqube" version "7.2.2.6593"
 }
 repositories {
     mavenCentral()
@@ -43,4 +44,9 @@ idea {
         inheritOutputDirs = false
         outputDir = file("$buildDir/classes/main/")
     }
+sonar {
+  properties {
+    property "sonar.projectKey", "springboot_service_with_ci"
+    property "sonar.host.url", "https://sonarcloud.io/"
+  }
 }
