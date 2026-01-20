@@ -45,6 +45,7 @@ idea {
         inheritOutputDirs = false
         outputDir = file("$buildDir/classes/main/")
     }
+}
 sonar {
   properties {
     property "sonar.projectKey", "springboot_service_with_ci"
