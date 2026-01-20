@@ -50,13 +50,13 @@ sonar {
   properties {
     property "sonar.projectKey", "springboot_service_with_ci"
     property "sonar.organization", "ftvc-org"
-    property "sonar.host.url", "https://sonarcloud.io/"
+    property "sonar.host.url", "https://sonarcloud.io"
   }
 }
 sonarqube {
   properties {
     property "sonar.projectKey", "springboot_service_with_ci"
     property "sonar.organization", "ftvc-org"
-    property "sonar.host.url", "https://sonarcloud.io/"
+    property "sonar.host.url", "https://sonarcloud.io"
   }
-  }
+}
